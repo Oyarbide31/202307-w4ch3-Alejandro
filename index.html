@@ -1,24 +1,45 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GoT</title>
-  <link rel="shortcut icon" href="../img/favicon.png" type="favicon" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-  <link rel="stylesheet" href="./styles.css" />
-  <script src="./dist/main.js" type="module" defer></script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <title>Phone</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="public/favicon (2).ico" type="image/x-icon">
 </head>
 
 <body>
-  <div class="app container">
-    <ul id="cards" class="characters-list row list-unstyled">
-
-
+  <div class="container">
+    <!-- El siguiente elemento se oculta añadiéndole la clase "off" -->
+    <span class="message">Calling...</span>
+    <main class="phone">
+      <div class="keyboard-container">
+        <ol class="keyboard">
+          <li><button class="key">1</button></li>
+          <li><button class="key">2</button></li>
+          <li><button class="key">3</button></li>
+          <li><button class="key">4</button></li>
+          <li><button class="key">5</button></li>
+          <li><button class="key">6</button></li>
+          <li><button class="key">7</button></li>
+          <li><button class="key">8</button></li>
+          <li><button class="key">9</button></li>
+          <li><button class="key">0</button></li>
+          <li><button class="key big">delete</button></li>
+        </ol>
+      </div>
+      <div class="actions">
+        <span class="number">667359961</span>
+        <!-- El botón de llamar debe tener la clase "activo" cuando -->
+        <!-- el número de teléfono tiene 9 cifras -->
+        <a href="#" class="call">Call</a>
+        <!-- Sólo se tiene que ver un botón u otro -->
+        <a href="#" class="hang active">Hang</a>
+      </div>
+    </main>
+  </div>
 </body>
 
 </html>
